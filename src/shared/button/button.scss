@@ -1,0 +1,20 @@
+.button-contact {
+    display: inline-block;
+    background-color: #954CED;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.26;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: #7B31D4;
+    }
+    
+    &:active {
+        background-color: #6327ad;
+    }
+}

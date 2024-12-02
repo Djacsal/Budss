@@ -1,0 +1,105 @@
+@import '../../assets/scss/mixins';
+
+.why-budss {
+    background-color: #181818;
+
+    &_container {
+        @include container;
+
+        .why-budss_header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px 0 70px 0;
+            max-width: 664px;
+            margin: 0 auto;
+
+            .why-budss_title {
+                @include textarea(#ffffff, 64px, 700, 1.06);
+            }
+            
+            .why-budss_description {
+                @include textarea(#ffffff, 36px, 600, 1.26);                
+                text-align: center;
+
+                .bg-purple {
+                    border-radius: 30px;
+                    position: relative;
+                    padding: 0 10px;
+                    background-color: #A64CED;
+                }
+            }
+        }
+
+        .why-budss_cards {
+            display: grid;
+            grid-template-columns: 547px 206px 547px;
+            grid-template-rows: repeat(2, 362px);
+            gap: 20px;
+            justify-content: center;
+            background-color:#181818;
+            padding: 100px;
+
+            .why-budss_card {
+                display: flex;
+                background-color: #F5F5F5;
+                border-radius: 30px;
+                overflow: hidden;
+
+                .card-header {
+                    margin: 40px 0 0 40px;
+                    max-width: 410px;
+
+                    .card-title {
+                        @include textarea(#000000, 48px, 600, 1.26);
+                        margin: 0 0 20px 0;
+                    }
+                    
+                    .card-description {
+                        @include textarea(#000000, 20px, 400, 1.20);
+                    }
+
+                }
+
+                .img-green {
+                    position: absolute;
+                    top: 298px;
+                    left: 72px;
+                }
+                
+                .img-orange {
+                    position: absolute;
+                    top: 276px;
+                    left: 394px;
+                }
+                
+                .img-purple {
+                    position: absolute;
+                    top: 80px;
+                    left: 459px;
+                }
+
+                .img-absolute {
+                    position: absolute;
+                    top: 279px;
+                    left: 345px;
+                }
+
+                .card-img {
+                    display: flex;
+                    align-items: end;
+                    margin: 0 auto;
+                    
+                }
+            }
+
+            .card-big {
+                grid-column: span 2;
+            }
+
+            .card-relative {
+                position: relative;
+            }
+        }
+    }
+}

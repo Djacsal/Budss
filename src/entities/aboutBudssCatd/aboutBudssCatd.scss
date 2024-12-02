@@ -1,0 +1,18 @@
+@import '../../assets/scss//mixins';
+ 
+.about-budss_advantages {
+    margin-top: 78px;
+    display: grid;
+    grid-template-columns: 321px 301px;
+    grid-template-rows: 268px 268px;
+    gap: 70px;
+
+    .advantage-title {
+    @include textarea(#ffffff, 48px, 700, 1.06);
+        margin: 10px 0 20px 0;
+    }
+    
+    .advantage-description {
+        @include textarea(#ffffff, 24px, 400, 1.20);
+    }
+}

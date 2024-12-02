@@ -1,0 +1,12 @@
+@mixin container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@mixin textarea ($color, $fontS, $fontW, $lineH){
+    color: $color;
+    font-size: $fontS;
+    font-weight: $fontW;
+    line-height: $lineH;
+}
+

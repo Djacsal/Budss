@@ -1,0 +1,30 @@
+import logo from './logo.svg'
+import budss from './budss.svg'
+import svg from './svg.svg'
+import about1 from './about1.svg'
+import about2 from './about2.svg'
+import about3 from './about3.svg'
+import about4 from './about4.svg'
+import about5 from './about5.svg'
+import about6_grin from './about6_grin.svg'
+import about6_orange from './about6_orange.svg'
+import about6_purple from './about6_purple.svg'
+import about7 from './about7.svg'
+import about8 from './about8.svg'
+import fone from '../../assets/img/fone.svg'
+import facebook from './facebook.svg'
+import instagram from './instagram.svg'
+import twiter from './twiter.svg'
+import tik_tok from './tik_tok.svg'
+import woo_commerce from './woo_commerce.svg'
+import shopify from './shopify.svg'
+import square from './square.svg'
+import squarespace from './squarespace.svg'
+import clover from './clover.svg'
+import appstore from './appstore.svg'
+import googleplay from './googleplay.svg'
+
+export default {
+    logo, budss, svg, about1, about2, about3, about4, about5, about6_grin, about6_orange, about6_purple, about7, about8,
+    fone, facebook, instagram, twiter, tik_tok, woo_commerce, shopify, square,squarespace, clover, appstore, googleplay
+};

@@ -1,0 +1,21 @@
+@import '../../assets/scss/mixins';
+
+.indicators-budss {
+    background-color: #954CED;
+
+    &_container {
+        padding: 40px 0 40px 0;
+        display: grid;
+        grid-template-columns: 217px 163px 161px;
+        column-gap: 100px;
+        justify-content: center;
+
+        .indicators-budss_value {
+            @include textarea(#ffffff,64px, 700, 1.06);
+        }
+        
+        .indicators-budss_text {
+            @include textarea(#ffffff,24px, 600, 1.20);
+        }
+    }
+}

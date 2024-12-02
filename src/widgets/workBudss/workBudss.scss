@@ -1,0 +1,44 @@
+@import '../../assets/scss/mixins';
+
+.work-budss{
+    padding: 100px 0 100px 0;
+    background-color: #181818;
+
+    &_container {
+        @include container;
+        position: relative;
+
+        .work-budss_img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .work-budss_moving-text {
+        padding: 46px 0;
+
+        .moving-text {
+            @include textarea(#000000, 128px, 700, 1.06);
+            white-space: nowrap;
+            overflow: hidden;
+            margin-bottom: 68px;
+
+            .color-green {
+                color: #2FDBBC;
+            }
+            
+            .color-purple {
+                color: #A64CED;
+            }
+            
+            .color-orange {
+                color: #FFAA4C;
+            }
+        }
+
+        .moving-text:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

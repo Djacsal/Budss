@@ -1,0 +1,35 @@
+@import '../../assets/scss/mixins';
+
+.about-budss {
+    background-color: #181818;
+
+    &_container {
+        @include container;
+
+        .about-budss_header {
+            margin-left: 60px;
+
+            .about-budss_title {
+                @include textarea(#ffffff, 96px, 700, 1.06);
+            }
+        }
+
+        .about-budss_info {
+            display: flex;
+
+            .about-budss_description {
+                @include textarea(#ffffff, 36px, 600, 1.26);
+                max-width: 430px;
+                margin: 80px 118px 142px 60px;
+
+                .bg-purple {
+                    border-radius: 30px;
+                    position: relative;
+                    padding: 0 10px;
+                    background-color: #A64CED;
+                }
+            }
+            
+        }
+    }
+}

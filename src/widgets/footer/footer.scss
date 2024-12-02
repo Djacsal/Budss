@@ -1,0 +1,62 @@
+@import '../../assets/scss/mixins';
+
+.footer-page {
+    background-color: #181818;
+
+    &_container {
+        @include container;
+        padding: 0 60px;
+
+        .footer-page_top {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 0 30px 0;
+            border-bottom: 2px solid #444444;
+            
+            .footer-logo-container {
+                display: flex;
+                align-items: center;
+
+                .logo-title {
+                    @include textarea(#ffffff, 37px, 600, 0.46);
+                }
+            }
+
+            .footer-nav {
+                display: flex;
+
+                .fooret-list {
+                    display: flex;
+                    align-items: center;
+                    gap: 0 20px;
+
+                    .footer-item {
+                        @include textarea(#ffffff, 20px, 500, 1.26);
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .footer-links {
+                display: flex;
+                gap: 0 20px;
+            }
+        }
+
+        .footer-page_bottom {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+
+            .right-page {
+                @include textarea(#B9B9B9, 14px, 300, 1.40);
+            }
+
+            .right-pages {
+                display: flex;
+                gap: 20px;
+
+            }
+        }
+    }
+}
